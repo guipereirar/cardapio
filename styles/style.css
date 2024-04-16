@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Prompt", serif;
+}
+header {
+  background-color: cadetblue;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header img {
+  width: 15%;
+}
+header nav {
+  width: 50%;
+}
+header ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+}
+main {
+  background-color: rgb(204, 204, 204);
+}
+.fundo {
+  width: 100%;
+}
+main h1 {
+  color: black;
+  text-align: center;
+}
+main h2 {
+  color: cadetblue;
+  background-color: rgb(231, 231, 231);
+  text-align: center;
+}
+.cardapio-carnes,
+.cardapio-frangos,
+.cardapio-acomp,
+.cardapio-sobre,
+.cardapio-bebidas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.item img {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  background-color: cadetblue;
+}
+.rodape {
+  text-align: center;
+}
+@media (max-width: 700px) {
+  h1 {
+    color: red;
+  }
+  .itens-cardapio {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  header ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: large;
+  }
+}
